@@ -51,3 +51,25 @@ original_question_averages = {
     "Feel free to take my time": 5.30,  # 47
     "Discover my inner time": 4.52  # 48
 }
+
+factor_averages = {
+    "1 The inner me": 4.7,
+    "2 The religious me": 3.8,
+    "3 Meet the locales and local heritage": 4.2,
+    "4 Slow travel": 5.3,
+    "5 Nature - knowledge and joy": 5.2,
+    "6 Exercise in nature": 5.4,
+    "7 Hiking together": 3.7,
+    "8 Be in solitude": 3.7
+}
+
+factor_alphas = {
+    "1 The inner me": 0.913,
+    "2 The religious me": 0.902,
+    "3 Meet the locales and local heritage": 0.834,
+    "4 Slow travel": 0.786,
+    "5 Nature - knowledge and joy": 0.760,
+    "6 Exercise in nature": 0.756,
+    "7 Hiking together": 0.749,
+    "8 Be in solitude": 0.531
+}
