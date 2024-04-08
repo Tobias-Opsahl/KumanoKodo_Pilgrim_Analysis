@@ -1,8 +1,11 @@
-import pandas as pd
-from constants import ANSWERS_FILENAME, DATA_FOLDER
-from new_questions import new_questions, factor_grouping
+import pprint
 from pathlib import Path
+
+import pandas as pd
 import pingouin as pg
+
+from constants import ANSWERS_FILENAME, DATA_FOLDER, OUTPUT_FILENAME
+from new_questions import factor_grouping, new_questions
 
 
 def read_and_process_answers():
@@ -53,12 +56,22 @@ def make_stats(df=None):
         # alphas[factor] = calculate_cronbach_alpha(df, questions)
         alphas[factor] = pg.cronbach_alpha(df[questions])[0]
 
-    stats = {"answer_averages": answer_averages, "factor_averages": factor_averages, "alphas": alphas}
+    stats = {"answer_averages": answer_averages, "factor_averages": factor_averages,
+             "factor_alphas": alphas, "n_answers": df.shape[0]}
     return stats
+
+
+def write_stats(stats):
+    with open(OUTPUT_FILENAME, "w") as outfile:
+        outfile.write(f"n_answers = {pprint.pformat(stats['n_answers'])}\n\n")
+        outfile.write(f"factor_averages = {pprint.pformat(stats['factor_averages'])}\n\n")
+        outfile.write(f"factor_alphas = {pprint.pformat(stats['factor_alphas'])}\n\n")
+        outfile.write(f"answer_averages = {pprint.pformat(stats['answer_averages'])}\n\n")
 
 
 if __name__ == "__main__":
     df = read_and_process_answers()
     stats = make_stats(df)
+    write_stats(stats)
     from IPython import embed
     embed()

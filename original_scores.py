@@ -1,5 +1,8 @@
+# These values were manually filled in. The values were taken from an image sent by mail
+# from the original authors. The table had questions in Norwegian, rather than English used
+# by the article.
 # The comment is which number the question was in the Norwegian table given by the authors
-original_question_averages = {
+original_answer_averages = {
     "Reflect on life": 5.19,  # 24
     "Obtain a deeper connection in life": 5.19,  # 17
     "Opportunity for self-discovery": 4.87,  # 23
@@ -52,7 +55,9 @@ original_question_averages = {
     "Discover my inner time": 4.52  # 48
 }
 
-factor_averages = {
+# The factor averages and alpha scores (internal consistency) is manually filled in,
+# Using the values form Table 3 in the article.
+original_factor_averages = {
     "1 The inner me": 4.7,
     "2 The religious me": 3.8,
     "3 Meet the locales and local heritage": 4.2,
@@ -63,7 +68,7 @@ factor_averages = {
     "8 Be in solitude": 3.7
 }
 
-factor_alphas = {
+original_factor_alphas = {
     "1 The inner me": 0.913,
     "2 The religious me": 0.902,
     "3 Meet the locales and local heritage": 0.834,
