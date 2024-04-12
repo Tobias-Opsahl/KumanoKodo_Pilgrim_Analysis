@@ -24,7 +24,7 @@ original_answer_averages = {
     "Tranquility and peace": 5.73,  # 6
     "Simplify daily priorities": 4.77,  # 12
     "Physical health and exercise": 5.60,  # 11
-    "Feel a special closeness with others in my group": 3.88,  # 5
+    "Experience a sense of community with other pilgrims": 3.88,  # 5
     "Be in a small intimate group": 3.20,  # 13
     "Feel a connection with others who value wilderness and remote places": 4.04,  # 16
     "Having a sense of discovery": 5.00,  # 4
@@ -46,7 +46,7 @@ original_answer_averages = {
     "Buying/consuming local products (like foods or crafts)": 3.25,  # 39
     "Visit local communities": 4.24,  # 40
     "The medieval heritage of the trail": 4.38,  # 41
-    "Heritage sites along the trail (churches:old farm-buildings:burial mounds etc.)": 4.91,  # 42
+    "Heritage sites along the trail (churches, old farm-buildings, burial mounds etc.)": 4.91,  # 42
     "Develop my spiritual values": 4.36,  # 43
     "Meditative experiences": 4.30,  # 44
     "Be in the present": 5.46,  # 45

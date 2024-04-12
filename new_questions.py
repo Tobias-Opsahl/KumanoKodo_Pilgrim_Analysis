@@ -115,7 +115,7 @@ factor_grouping = {
         "Being alone/solitude"]  # NOTE: SIC From "Be alone/solitude"
 }
 
-original_questions_to_ids = {
+new_questions_to_ids = {
     new_questions[i]: i for i in range(len(new_questions))}
 new_questions_to_group_id = {}
 question_id_to_group_id = {}
@@ -128,7 +128,7 @@ for question in new_questions:
     if group is None:
         print(question)
     new_questions_to_group_id[question] = group
-    question_id_to_group_id[original_questions_to_ids[question]] = group
+    question_id_to_group_id[new_questions_to_ids[question]] = group
 
 
 check = True
@@ -157,3 +157,14 @@ if check:
         message = "Unique questions in factor grouping and questions included does not match, was "
         message += f"{n_unique_in_grouping} and {n_included}"
         raise Exception(message)
+
+
+new_questions_to_old_questions = {new_question: new_question for new_question in new_questions}
+
+new_questions_to_old_questions["Visit shrines or other religious buildings"] = \
+    "Visit churches or other religious buildings"
+new_questions_to_old_questions["Reach the holy shrines of Kumano Kodo (Hongu, Shingu or Nachi)"] = \
+    "Reach the holy shrine of St. Olav"
+new_questions_to_old_questions["The ancient heritage of the trail"] = "The medieval heritage of the trail"
+new_questions_to_old_questions["Heritage sites along the trail (shrines, temples, historical landmarks, etc.)"] = \
+    "Heritage sites along the trail (churches, old farm-buildings, burial mounds etc.)"

@@ -25,7 +25,8 @@ original_questions = [
     "Tranquility and peace",  # NOTE: Dropped, but commented
     "Simplify daily priorities",  # NOTE: Dropped
     "Physical health and exercise",  # NOTE: SIC from "Physical health/and exercise"
-    "Feel a special closeness with others in my group",  # NOTE: Dropped
+    # NOTE: SIC from "Feel a special closeness with others in my group"
+    "Experience a sense of community with other pilgrims",
     "Be in a small intimate group",  # NOTE: SIC from "A small intimate group"
     # NOTE: SIC from "Feel a connection with others who value wilderness"
     "Feel a connection with others who value wilderness and remote places",
@@ -117,7 +118,7 @@ factor_grouping = {
 
 original_questions_to_ids = {
     original_questions[i]: i for i in range(len(original_questions))}
-oritinal_question_to_group_id = {}
+original_question_to_group_id = {}
 question_id_to_group_id = {}
 
 for question in original_questions:
@@ -127,5 +128,5 @@ for question in original_questions:
             group.append(int(factor[0]))
     if group is None:
         print(question)
-    oritinal_question_to_group_id[question] = group
+    original_question_to_group_id[question] = group
     question_id_to_group_id[original_questions_to_ids[question]] = group
