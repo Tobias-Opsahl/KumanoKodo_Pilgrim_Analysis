@@ -67,3 +67,51 @@ answer_averages = {'Be in a small intimate group': 4.483870967741935,
                    'Travel in an environment-friendly way': 4.935483870967742,
                    'Visit local communities': 5.32258064516129,
                    'Visit shrines or other religious buildings': 5.193548387096774}
+
+standard_stats = {'average_age': 53.38709677419355,
+                  'average_days': 5.612903225806452,
+                  'average_days_females': 5.0,
+                  'average_days_japanese': 6.571428571428571,
+                  'average_days_males': 6.357142857142857,
+                  'average_days_non_japanese': 5.333333333333333,
+                  'females': 17,
+                  'males': 14,
+                  'n_japanese': 7,
+                  'n_non_japanese': 24,
+                  'n_replies': 31}
+
+female_factor_averages = {'1 The inner me': 4.614973262032086,
+                          '2 The religious me': 4.382352941176471,
+                          '3 Meet the locales and local heritage': 5.568627450980393,
+                          '4 Slow travel': 5.105882352941176,
+                          '5 Nature - knowledge and joy': 5.68235294117647,
+                          '6 Exercise in nature': 5.764705882352941,
+                          '7 Hiking together': 4.490196078431373,
+                          '8 Be in solitude': 4.617647058823529}
+
+male_factor_averages = {'1 The inner me': 4.798701298701299,
+                        '2 The religious me': 4.392857142857143,
+                        '3 Meet the locales and local heritage': 4.928571428571429,
+                        '4 Slow travel': 5.271428571428571,
+                        '5 Nature - knowledge and joy': 5.457142857142858,
+                        '6 Exercise in nature': 5.8809523809523805,
+                        '7 Hiking together': 4.238095238095238,
+                        '8 Be in solitude': 4.071428571428571}
+
+japanese_factor_averages = {'1 The inner me': 5.051948051948052,
+                            '2 The religious me': 4.904761904761904,
+                            '3 Meet the locales and local heritage': 4.69047619047619,
+                            '4 Slow travel': 5.314285714285715,
+                            '5 Nature - knowledge and joy': 5.085714285714286,
+                            '6 Exercise in nature': 5.761904761904762,
+                            '7 Hiking together': 4.523809523809524,
+                            '8 Be in solitude': 5.142857142857143}
+
+non_japanese_factor_averages = {'1 The inner me': 4.59469696969697,
+                                '2 The religious me': 4.236111111111112,
+                                '3 Meet the locales and local heritage': 5.451388888888888,
+                                '4 Slow travel': 5.141666666666667,
+                                '5 Nature - knowledge and joy': 5.7250000000000005,
+                                '6 Exercise in nature': 5.833333333333333,
+                                '7 Hiking together': 4.333333333333333,
+                                '8 Be in solitude': 4.145833333333333}
