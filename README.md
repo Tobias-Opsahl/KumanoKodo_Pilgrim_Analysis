@@ -1,7 +1,5 @@
 # Exploring the Contemporary Appeal of Kumano Kodo
 
-This is the code used for the qualitative analysis for the assignment in JAP3000 at the University of Oslo, Spring 2024.
-
 The assignment explores the motives behind travelling along the old pilgrim road known as `Kumano Kodo` in Japan, specifically the `Nakaechi` route. In doing so, it is compared to the equally old pilgrim road `Saint Olav's Way` in Norway, specifically the `Gulbrandsalen` route.
 
 The qualitative analysis is based on the work done in the article [Long-distance hikers and their inner journeys: On motives and pilgrimage to Nidaros, Norway](https://www.sciencedirect.com/science/article/pii/S2213078020300505). There, they ask 48 questions relating to motivation for travelling, with answers being on a seven point Likert scale, from `1. Not important at all` to `7. Extremely important`. They do factor analysis (specifically PCA with varimax rotation) and end up with eight undermining factors for the travellers.
@@ -21,5 +19,3 @@ Here is an overview over the files:
 - `results.py`: This file contains python dictionaries of the same scores as in `original_scores.py`, but with the results achieved from my own analysis.
 - `process_answers.py`: The code for processing the answers from the questionnaire, calculating the statistics and writing them (to `results.py`) is in this file. It is dependent on the raw data from the questionnaire, which is not provided.
 - `constants.py`: This file contains some constants used in the code.
-
-![no gif :()](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzJnOGt2dGI0OTdmZnMwbXZvZXppanFyaGNycTF0NzZjdzVmdmxpZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mCRJDo24UvJMA/giphy.gif)
